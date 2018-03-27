@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
 
 </head>
-<body>
+<body onload="leftTimer()">
 <div class="container">
     <h1>Coming Soon</h1>
     <div class="description">
@@ -26,6 +26,49 @@
             <li><%=members[2].name%></li>
         </ul>
     </div>
+    <div class="CountDown">
+        <h3>Time left until launching</h3>
+        <div id = "daybox"><span id="day"></span></div>
+        <div id = "hourbox"><span id="hour"></span></div>
+        <div id = "minbox"><span id="min"></span></div>
+        <div id = "secondbox"><span id="second"></span> </div>
+        <p id="DST"></p>
+    </div>
 </div>
+
+<script type="text/javascript">
+    function leftTimer(year,month,day,hour,minute,second){
+        var leftTime = (new Date(year,month-1,day,hour,minute,second)) - (new Date());
+        var days = parseInt(leftTime / 1000 / 60 / 60 / 24 , 10); //caculate the day
+        var hours = parseInt(leftTime / 1000 / 60 / 60 % 24 , 10); //caculate the hour
+        var minutes = parseInt(leftTime / 1000 / 60 % 60, 10);//caculate the min
+        var seconds = parseInt(leftTime / 1000 % 60, 10);//caculate the seconds
+        days = checkTime(days);
+        hours = checkTime(hours);
+        minutes = checkTime(minutes);
+        seconds = checkTime(seconds);
+        setInterval("leftTimer(2018,5,21,0,0,0)",1000);
+        document.getElementById("day").innerHTML = days+"  days";
+        document.getElementById("hour").innerHTML = hours+"  hours";
+        document.getElementById("min").innerHTML =minutes+"  minutes";
+        document.getElementById("second").innerHTML =seconds+"  seconds";
+        checkDST();
+    }
+    function checkTime(i){ //if time is less than 10 add 0
+        if(i<10) {
+            i = "0" + i;
+        }
+        return i;
+    }
+    function checkDST() {
+        var d1 = new Date(2009,0,1);
+        var d2 = new Date(2009,6,1);
+        var Time = d1.getTimezoneOffset != d2.getTimezoneOffset();
+        if(Time){
+            document.getElementById("DST").innerHTML = "Need to check Daylight Saving Time";
+        }
+    }
+</script>
+
 </body>
 </html>

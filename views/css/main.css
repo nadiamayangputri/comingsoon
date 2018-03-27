@@ -39,7 +39,7 @@ ul {
     right: 14rem;
 }
 
-.description {
+.description{
     text-align: center;
     font-family: "Century Gothic";
     text-shadow: 1px 3px 0 rgba(175, 172, 163, 0.2);
@@ -74,4 +74,21 @@ ul {
     color: #fff;
     justify-content: space-around;
     font-size: 1.4em;
+}
+
+#daybox,#hourbox,#minbox,#secondbox {
+    display: inline-block;
+    width: 160px;
+    height: 140px;
+    margin: 0 10px;
+    padding-top: 20px;
+    -moz-border-radius: 80px;
+    -webkit-border-radius: 80px;
+    border-radius: 80px;
+    font-size: 18px;
+}
+
+#day,#hour,#min,#second {
+    font-size: 30px;
+    line-height: 120px;
 }
