@@ -3,20 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <title>Coming Soon</title>
+
+    <!--CSS Link-->
     <link rel="stylesheet" href="./css/main.css">
+
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+
 </head>
 <body>
-    <h1>Coming Soon</h1>
-    <div class="description">
-        <h2>Discover and learn fresh food ingredients everyday.</h2>
+    <div class="container">
+        <h1>Coming Soon</h1>
+        <div class="description">
+            <h2>Discover and learn fresh food ingredients everyday.</h2>
+        </div>
+        <div class="members">
+            <h3 class="team-name">Rainbow Rift</h3>
+            <ul class="member-names">
+                <li><%=members[0].name%></li>
+                <li><%=members[1].name%></li>
+                <li><%=members[2].name%></li>
+            </ul>
+        </div>
     </div>
-    <h3><a href="/members">Members</a></h3>
-    <h3>Team Name: Rainbow Rift</h3>
-    <h3>Team Members:</h3>
-    <ul>
-        <li><%=members[0].name%></li>
-        <li><%=members[1].name%></li>
-        <li><%=members[2].name%></li>
-    </ul>
 </body>
 </html>
