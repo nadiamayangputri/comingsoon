@@ -18,6 +18,14 @@
         <h2>A journey to explore fresh food ingredients everyday</h2>
         <h2>Keep a food journal and make it fun!</h2>
     </div>
+    <div class="countdown">
+        <h3>Time left until launch date</h3>
+        <div id = "daybox"><span id="day"></span></div>
+        <div id = "hourbox"><span id="hour"></span></div>
+        <div id = "minbox"><span id="min"></span></div>
+        <div id = "secondbox"><span id="second"></span> </div>
+        <p id="DST"></p>
+    </div>
     <div class="members">
         <h3 class="team-name">Rainbow Rift</h3>
         <ul class="member-names">
@@ -26,14 +34,7 @@
             <li><%=members[2].name%></li>
         </ul>
     </div>
-    <div class="CountDown">
-        <h3>Time left until launching</h3>
-        <div id = "daybox"><span id="day"></span></div>
-        <div id = "hourbox"><span id="hour"></span></div>
-        <div id = "minbox"><span id="min"></span></div>
-        <div id = "secondbox"><span id="second"></span> </div>
-        <p id="DST"></p>
-    </div>
+
 </div>
 
 <script type="text/javascript">
@@ -48,10 +49,10 @@
         minutes = checkTime(minutes);
         seconds = checkTime(seconds);
         setInterval("leftTimer(2018,5,21,0,0,0)",1000);
-        document.getElementById("day").innerHTML = days+"  days";
-        document.getElementById("hour").innerHTML = hours+"  hours";
-        document.getElementById("min").innerHTML =minutes+"  minutes";
-        document.getElementById("second").innerHTML =seconds+"  seconds";
+        document.getElementById("day").innerHTML = days;
+        document.getElementById("hour").innerHTML = hours;
+        document.getElementById("min").innerHTML =minutes;
+        document.getElementById("second").innerHTML =seconds;
         checkDST();
     }
     function checkTime(i){ //if time is less than 10 add 0

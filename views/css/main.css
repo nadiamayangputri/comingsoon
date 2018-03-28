@@ -35,7 +35,7 @@ ul {
 
 .container {
     position: absolute;
-    top: 15rem;
+    top: 7rem;
     right: 14rem;
 }
 
@@ -48,6 +48,9 @@ ul {
     color: #fff;
 }
 
+.countdown {
+    margin: 20px;
+}
 /* ====================
     Element Styles
    ==================== */
@@ -55,16 +58,16 @@ ul {
 .team-name {
     text-align: center;
     font-family: 'Righteous', cursive;
-    //color: #fff;
-    background: linear-gradient(to right, black,red,
-    orange , yellow, green, cyan, blue, violet);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #fff;
     font-size: 3em;
 }
 
 .team-name:hover {
     transform: scale(1.1);
+    background: linear-gradient(to right, black,red,
+    orange , yellow, green, violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .member-names {
@@ -85,10 +88,22 @@ ul {
     -moz-border-radius: 80px;
     -webkit-border-radius: 80px;
     border-radius: 80px;
-    font-size: 18px;
+
+    background-color: rgba(0, 204, 122, 0.4);
+    text-align: center;
+    font-family: "Century Gothic";
+    font-weight: bold;
+    color: #fff;
 }
 
 #day,#hour,#min,#second {
     font-size: 30px;
     line-height: 120px;
+}
+
+.countdown h3 {
+    text-align: center;
+    font-family: "Century Gothic";
+    color: #fff;
+    font-size: 2em;
 }
