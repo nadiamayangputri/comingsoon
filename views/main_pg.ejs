@@ -13,19 +13,24 @@
 </head>
 <body onload="leftTimer()">
 <div class="container">
+    <div class="countdown">
+
+        <div id = "daybox"><span id="day"></span></div>
+        <div id = "hourbox"><span id="hour"></span></div>
+        <div id = "minbox"><span id="min"></span></div>
+        <div id = "secondbox"><span id="second"></span> </div>
+        <div id = "daytag"><h3>days</h3></div>
+        <div id = "hourtag"><h3>hours</h3></div>
+        <div id = "mintag"><h3>minutes</h3></div>
+        <div id = "secondtag"><h3>seconds</h3> </div>
+        <p id="DST"></p>
+    </div>
     <h1>Coming Soon</h1>
     <div class="description">
         <h2>A journey to explore fresh food ingredients everyday</h2>
         <h2>Keep a food journal and make it fun!</h2>
     </div>
-    <div class="countdown">
-        <h3>Time left until launch date</h3>
-        <div id = "daybox"><span id="day"></span></div>
-        <div id = "hourbox"><span id="hour"></span></div>
-        <div id = "minbox"><span id="min"></span></div>
-        <div id = "secondbox"><span id="second"></span> </div>
-        <p id="DST"></p>
-    </div>
+
     <div class="members">
         <h3 class="team-name">Rainbow Rift</h3>
         <ul class="member-names">
@@ -65,9 +70,9 @@
         var d1 = new Date(2009,0,1);
         var d2 = new Date(2009,6,1);
         var Time = d1.getTimezoneOffset != d2.getTimezoneOffset();
-        if(Time){
+        /*if(Time){
             document.getElementById("DST").innerHTML = "Need to check Daylight Saving Time";
-        }
+        }*/
     }
 </script>
 
