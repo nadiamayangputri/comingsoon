@@ -5,6 +5,7 @@
 html {
     box-sizing: border-box;
     height: 100%;
+    font-size: 10px;
 }
 
 body {
@@ -21,7 +22,7 @@ h1 {
     color: rgba(255,255,255,0.6);
     text-shadow: 5px 8px 0 rgba(255, 198, 56,0.2);
     font-family: "Century Gothic";
-    font-size: 7em;
+    font-size: 7rem;
     text-align: center;
 }
 
@@ -34,16 +35,17 @@ ul {
    ==================== */
 
 .container {
+    margin: 0 0 0 auto;
     position: absolute;
     top: 7rem;
-    right: 14rem;
+    right: 0rem;
 }
 
 .description{
     text-align: center;
     font-family: "Century Gothic";
     text-shadow: 1px 3px 0 rgba(175, 172, 163, 0.2);
-    font-size: 1.2em;
+    font-size: 1.2rem;
     font-weight: bold;
     color: #ffff66;
 }
@@ -59,7 +61,7 @@ ul {
     text-align: center;
     font-family: 'Righteous', cursive;
     color: #fff;
-    font-size: 3em;
+    font-size: 3rem;
 }
 
 .team-name:hover {
@@ -76,18 +78,15 @@ ul {
     font-family: "Century Gothic";
     color: #fff;
     justify-content: space-around;
-    font-size: 1.4em;
+    font-size: 1.4rem;
 }
 
 #daybox,#hourbox,#minbox,#secondbox {
     display: inline-block;
-    width: 160px;
-    height: 140px;
-    margin: 0 10px;
-    padding-top: 20px;
-    -moz-border-radius: 80px;
-    -webkit-border-radius: 80px;
-    border-radius: 80px;
+    width: 8rem;
+
+    margin: 0 3rem;
+    border-radius: 50%;
 
     background-color: rgba(0, 204, 122, 0.4);
     text-align: center;
@@ -97,13 +96,11 @@ ul {
 }
 #daytag,#hourtag,#mintag,#secondtag {
     display: inline-block;
-    width: 160px;
-    height: 140px;
-    margin: 0 10px;
-    padding-top: 20px;
-    -moz-border-radius: 80px;
-    -webkit-border-radius: 80px;
-    border-radius: 80px;
+    width: 8rem;
+    height: 2rem;
+    margin: 0 3rem;
+    padding-top: 1rem;
+    border-radius: 50%;
 
     background-color: rgba(0, 204, 122, 0);
     text-align: center;
@@ -112,13 +109,13 @@ ul {
     color: #fff;
 }
 #day,#hour,#min,#second {
-    font-size: 30px;
-    line-height: 120px;
+    font-size: 3rem;
+    line-height: 12rem;
 }
 
 .countdown h3 {
     text-align: center;
     font-family: "Century Gothic";
     color: #fff;
-    font-size: 25px;
+    font-size: 2.5rem;
 }
