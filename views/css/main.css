@@ -10,8 +10,7 @@ html {
 body {
     margin: 0;
     background-image: linear-gradient(to left, rgba(244, 89, 66, 0.7),
-    rgba(255, 106, 38, 0)),
-    url('https://source.unsplash.com/08bOYnH_r_E/3997x3171');
+    rgba(255, 106, 38, 0)), url('https://source.unsplash.com/08bOYnH_r_E/3997x3171');
     background-size: cover;
 }
 
@@ -99,11 +98,4 @@ ul {
 #day,#hour,#min,#second {
     font-size: 30px;
     line-height: 120px;
-}
-
-.countdown h3 {
-    text-align: center;
-    font-family: "Century Gothic";
-    color: #fff;
-    font-size: 2em;
 }

@@ -19,12 +19,12 @@
         <h2>Keep a food journal and make it fun!</h2>
     </div>
     <div class="countdown">
-        <h3>Time left until launch date</h3>
+
         <div id = "daybox"><span id="day"></span></div>
         <div id = "hourbox"><span id="hour"></span></div>
         <div id = "minbox"><span id="min"></span></div>
         <div id = "secondbox"><span id="second"></span> </div>
-        <p id="DST"></p>
+        <!--<p id="DST"></p>-->
     </div>
     <div class="members">
         <h3 class="team-name">Rainbow Rift</h3>
@@ -52,7 +52,8 @@
         document.getElementById("day").innerHTML = days;
         document.getElementById("hour").innerHTML = hours;
         document.getElementById("min").innerHTML =minutes;
-        document.getElementById("second").innerHTML =seconds;
+        document.getElementById("second").innerHTML =seconds ;
+
         checkDST();
     }
     function checkTime(i){ //if time is less than 10 add 0
