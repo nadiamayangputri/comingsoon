@@ -9,17 +9,15 @@ html {
 
 body {
     margin: 0;
-    background-image: linear-gradient(to left, rgba(244, 89, 66, 0.7),
-    rgba(255, 106, 38, 0)), url('https://source.unsplash.com/08bOYnH_r_E/3997x3171');
+    background-image: url('https://source.unsplash.com/sil2Hx4iupI/4000x2660');
     background-size: cover;
 }
 
-
 h1 {
     margin: auto;
-    color: rgba(255,255,255,0.6);
+    color: rgba(255, 130, 5, 0.7);
     text-shadow: 5px 8px 0 rgba(255, 198, 56,0.2);
-    font-family: "Century Gothic";
+    font-family: 'Days One', sans-serif;
     font-size: 7em;
     text-align: center;
 }
@@ -33,51 +31,70 @@ ul {
    ==================== */
 
 .container {
-    position: absolute;
-    top: 7rem;
-    right: 14rem;
+    margin: auto;
+    margin-top: 6.5rem;
+    width: 100%;
 }
 
 .description{
     text-align: center;
-    font-family: "Century Gothic";
-    text-shadow: 1px 3px 0 rgba(175, 172, 163, 0.2);
+    font-family: 'Varela Round', sans-serif;
     font-size: 1.2em;
     font-weight: bold;
-    color: #fff;
+    color: rgb(249, 74, 104);
 }
 
 .countdown {
     margin: 20px;
+}
+
+.counter,
+.tags {
+    display: flex;
+    justify-content: center;
+}
+
+.members {
+    margin-top: 100px;
 }
 /* ====================
     Element Styles
    ==================== */
 
 .team-name {
+    margin: auto;
     text-align: center;
     font-family: 'Righteous', cursive;
     color: #fff;
     font-size: 3em;
+    width: 300px;
+    text-shadow: 0 0 10px rgba(0,0,0,0.4);
 }
 
 .team-name:hover {
     transform: scale(1.1);
-    background: linear-gradient(to right, black,red,
-    orange , yellow, green, violet);
+    background-image: linear-gradient(to right,red,
+    orange , yellow, green);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    text-shadow: none;
 }
 
 .member-names {
     display: flex;
     text-align: center;
-    font-family: "Century Gothic";
-    color: #fff;
-    justify-content: space-around;
+    font-family: 'Days One', sans-serif;
+    color: rgba(169, 10, 87, 0.7);;
+    justify-content: center;
     font-size: 1.4em;
+    font-weight: bold;
 }
 
+.member-names li {
+    margin: 20px;
+}
+
+/*rgba(169, 10, 87, 0.7);*/
 #daybox,#hourbox,#minbox,#secondbox {
     display: inline-block;
     width: 160px;
@@ -87,15 +104,29 @@ ul {
     -moz-border-radius: 80px;
     -webkit-border-radius: 80px;
     border-radius: 80px;
+    box-shadow: 5px 8px 0 rgba(255, 198, 56,0.2);
 
-    background-color: rgba(0, 204, 122, 0.4);
+    background-color: rgba(0, 204, 122, 0.6);
     text-align: center;
     font-family: "Century Gothic";
     font-weight: bold;
     color: #fff;
 }
+#daytag,#hourtag,#mintag,#secondtag {
+    display: inline-block;
+    width: 160px;
+    height: 100px;
+    margin: 0 10px;
 
+
+    text-align: center;
+    font-family: monospace;
+    font-weight: bold;
+    color: #3a3a3a;
+    font-size: 1.5em;
+}
 #day,#hour,#min,#second {
     font-size: 30px;
     line-height: 120px;
 }
+

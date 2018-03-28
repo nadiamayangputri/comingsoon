@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./css/main.css">
 
     <!--Fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Righteous|Varela+Round|Days+One" rel="stylesheet">
 
 </head>
 <body onload="leftTimer()">
@@ -20,11 +20,18 @@
     </div>
     <div class="countdown">
 
-        <div id = "daybox"><span id="day"></span></div>
-        <div id = "hourbox"><span id="hour"></span></div>
-        <div id = "minbox"><span id="min"></span></div>
-        <div id = "secondbox"><span id="second"></span> </div>
-        <!--<p id="DST"></p>-->
+        <div class = "counter">
+            <div id = "daybox"><span id="day"></span></div>
+            <div id = "hourbox"><span id="hour"></span></div>
+            <div id = "minbox"><span id="min"></span></div>
+            <div id = "secondbox"><span id="second"></span> </div>
+        </div>
+            <div class = "tags">
+            <div id = "daytag"><h3>Days</h3></div>
+            <div id = "hourtag"><h3>Hours</h3></div>
+            <div id = "mintag"><h3>Minutes</h3></div>
+             <div id = "secondtag"><h3>Seconds</h3> </div>
+        </div>
     </div>
     <div class="members">
         <h3 class="team-name">Rainbow Rift</h3>
@@ -52,8 +59,7 @@
         document.getElementById("day").innerHTML = days;
         document.getElementById("hour").innerHTML = hours;
         document.getElementById("min").innerHTML =minutes;
-        document.getElementById("second").innerHTML =seconds ;
-
+        document.getElementById("second").innerHTML =seconds;
         checkDST();
     }
     function checkTime(i){ //if time is less than 10 add 0
@@ -66,9 +72,9 @@
         var d1 = new Date(2009,0,1);
         var d2 = new Date(2009,6,1);
         var Time = d1.getTimezoneOffset != d2.getTimezoneOffset();
-        if(Time){
+        /*if(Time){
             document.getElementById("DST").innerHTML = "Need to check Daylight Saving Time";
-        }
+        }*/
     }
 </script>
 
