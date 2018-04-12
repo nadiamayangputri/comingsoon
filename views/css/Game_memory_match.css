@@ -18,8 +18,8 @@ body {
 
 body {
     background: #ffffff;
-    font-family: 'Permanent Marker', cursive;
-    font-size: 16px;
+    font-family: 'Press Start 2P',cursive;
+    font-size: 10px;
 }
 
 .container {
@@ -30,7 +30,7 @@ body {
 }
 
 h1 {
-    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 1.4em;
 }
 
 
@@ -116,7 +116,7 @@ h1 {
 }
 
 .score-panel .stars {
-    margin: 0;
+
     padding: 0;
     display: inline-block;
     margin: 0 5px 0 0;
@@ -172,7 +172,7 @@ h1 {
     width: 85%;
     position: relative;
     transition: all 5s ease-in-out;
-    font-family: 'Gloria Hallelujah', cursive;
+    font-family: Tahoma, Arial, sans-serif;
 }
 
 .popup h2 {
@@ -219,7 +219,7 @@ h1 {
     display: block;
     margin: 0 auto;
     width: 50%;
-    font-family: 'Gloria Hallelujah', cursive;
+    font-family: Tahoma, Arial, sans-serif;
     color: #ffffff;
     border-radius: 5px;
 }
